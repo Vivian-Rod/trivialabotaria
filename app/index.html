@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn.glitch.global/535a400e-23ba-4313-8e09-b65918681d67/c2b29037-04e9-4411-af2e-e60fd135b4b2.image.png?v=1713453684579">
+  <title>Trivia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content" role="main">
+      <h1 class="title">Trivia Viajera</h1>
+
+      <!-- Aquí van las preguntas de la trivia -->
+         <div class="pregunta">
+          <h2> 1. ¿En qué país se encuentra la Torre de Pisa?</h2>
+          <div class="links">
+            <label>
+              <input type="radio" name="pais" value="Italia"> Italia
+            </label><br/><br/>
+            <label>
+              <input type="radio" name="pais" value="Grecia"> Grecia
+            </label><br/><br/>
+            <label>
+              <input type="radio" name="pais" value="Bélgica"> Bélgica
+            </label><br/><br/>
+            <button class="respuesta" onclick="verificarRespuesta('Italia')">
+              <h2>Ver Respuesta</h2>
+            </button>
+          </div>
+        </div>
+        
+        <div class="pregunta">
+          <h2> 2. ¿En qué ciudad se encuentra el Río Sena?</h2>
+          <div class="links">
+            <a class="btn--remix" onclick="mostrarError()">Roma</a>
+            <a class="btn--remix" onclick="mostrarError()">Londres</a>
+            <a class="btn--remix" onclick="mostrarAlerta()">Paris</a>
+            <button class="respuesta" onclick="showAnswer('La Respuesta correcta es París')">
+              <h2>Ver Respuesta</h2>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

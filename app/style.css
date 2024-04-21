@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2A383A; 
+  color: #4C5655;
+  margin: 0; 
+  padding: 0;
+  background-image: url('https://cdn.glitch.global/535a400e-23ba-4313-8e09-b65918681d67/INSTAGRAM POST PAGINA WEB DECO HOGAR (3000 x 3000 px).png?v=1713405653693');
+  background-size: cover;
+  background-position: center;
+}
+
+/* contenedor principal */
+
+.wrapper { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* alto en % relación al navegador */
+  margin: 20px; 
+}
+
+/* contenedor secundario */
+.content {
+  max-width: 800px; /* ancho */
+  padding: 40px;
+  text-align: center;
+}
+
+.content form {
+    display: inline-block; /* posición elementos bloque en linea */
+    text-align: left; /* alineacion texto */
+}
+
+.content form button { /* para los estilos del boton */
+    display: block; 
+    margin: 0 auto; 
+
+}
+
+.content form label { /* para estilos en el formulario*/
+    font-weight: bold; 
+    color: white; 
+}
+
+.title {
+  color: #03E2FF;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-size: 5rem;
+}
+
+.preguntas {
+  display: flex; /* contenedor flexible*/
+  flex-wrap: wrap; /* se envuelven en varias lineas */
+  justify-content: space-between; 
+}
+
+.pregunta {
+  flex-basis: calc(45% - 20px); 
+  background-color: #F8FEFF;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 20px; 
+  position: relative; 
+}
+
+.links a, .respuesta button {
+  display: block;
+  width: 90%; 
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #D2F5FA;
+  color: #4C5655;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.links a:hover, .respuesta button:hover { /* cuando el cursor se posiciona sobre*/
+  background-color: #C4FFD2;
+}
+
+.respuesta {
+  background-color: #D2F5FA;
+}
+
+h1, p {
+  font-weight: bold;
+  font-size: 1.7em;
+  color: white;
+  text-align: center;
+}
+
+a {
+  display: block;
+  width: fit-content; 
+  margin: auto; 
+  text-align: center; 
+  font-size: 1.2em;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button-container {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.form-container { /* estilos en el formulario*/
+    text-align: center; 
+}
+
+.form-container label,
+.form-container input,
+.form-container button {
+    display: inline-block; 
+    margin-bottom: 10px; 
+}
